@@ -18,9 +18,24 @@ namespace BanHangSieuTHi
             InitializeComponent();           
         }
 
+        string temp;
         public void LoadListView1()
         {
-            
+            listView1.Items.Clear();
+            sqlQuery sql = new sqlQuery();
+            DataTable dt = sql.LayDuLieu("Select * from NHANVIEN");
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                ListViewItem item = new ListViewItem((i + 1).ToString());
+                item.SubItems.Add(dt.Rows[i][0].ToString());
+                item.SubItems.Add(dt.Rows[i][1].ToString());
+                item.SubItems.Add(dt.Rows[i][2].ToString());
+                item.SubItems.Add(dt.Rows[i][5].ToString());
+                item.SubItems.Add(dt.Rows[i][3].ToString());
+                item.SubItems.Add(dt.Rows[i][6].ToString());
+                item.SubItems.Add(dt.Rows[i][4].ToString());
+                listView1.Items.Add(item);
+            }
         }
         private void frmQLNV_Load(object sender, EventArgs e)
         {
