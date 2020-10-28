@@ -50,7 +50,30 @@ namespace BanHangSieuTHi
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-           
+            try
+            {
+                if (txtMa.Text != "")
+                {
+                    DialogResult result;
+                    result = MessageBox.Show("BẠN CÓ MUỐN XÓA NHÂN VIÊN NÀY KHÔNG?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        string[] name = { "@MaNV" };
+                        string[] value = { temp };
+                        sqlQuery sql = new sqlQuery();
+                        sql.update("DELETE_NV", name, value, 1);
+                        MessageBox.Show("Xóa thành công .");
+                        listView1.Items.Clear();
+                        LoadListView1();
+                    }
+                }
+                else { MessageBox.Show("Hãy chọn một nhân viên bạn muốn thao tác !!", "Warning"); }
+
+            }
+            catch (Exception)
+            {
+
+            }
         }
 
        
