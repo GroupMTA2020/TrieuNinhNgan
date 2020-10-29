@@ -19,7 +19,10 @@ namespace BanHangSieuTHi
 
         private void frmBaoCaoThongKe_Load(object sender, EventArgs e)
         {
-          
+            // TODO: This line of code loads data into the 'DataSetBaoCao.DataTable1' table. You can move, or remove it, as needed.
+            this.DataTable1TableAdapter.Fill(this.DataSetBaoCao.DataTable1);
+
+            this.reportViewer1.RefreshReport();
         }
     }
 }
