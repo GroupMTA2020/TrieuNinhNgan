@@ -147,12 +147,35 @@ namespace BanHangSieuTHi
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-           
+            try
+            {
+                if (txtMa.Text != "")
+                {
+                    DialogResult result;
+                    result = MessageBox.Show("BẠN CÓ MUỐN XÓA KHÁCH HÀNG NÀY KHÔNG?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        string[] name = { "@MaKH" };
+                        string[] value = { temp };
+                        sqlQuery sql = new sqlQuery();
+                        sql.update("DELETE_KH", name, value, 1);
+                        MessageBox.Show("Xóa thành công .");
+                        listView1.Items.Clear();
+                        LoadListView();
+                    }
+                }
+                else { MessageBox.Show("Hãy chọn một khách hàng bạn muốn thao tác !!", "Warning"); }
+
+            }
+            catch (Exception)
+            {
+
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void lbl4_Click(object sender, EventArgs e)
