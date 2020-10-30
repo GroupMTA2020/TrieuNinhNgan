@@ -96,7 +96,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.btnXoaX);
@@ -229,6 +229,7 @@
             this.lsvDSHDX.FullRowSelect = true;
             this.lsvDSHDX.GridLines = true;
             this.lsvDSHDX.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.lsvDSHDX.HideSelection = false;
             this.lsvDSHDX.Location = new System.Drawing.Point(5, 28);
             this.lsvDSHDX.Name = "lsvDSHDX";
             this.lsvDSHDX.Size = new System.Drawing.Size(823, 245);
@@ -296,7 +297,7 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.tabPage2.Controls.Add(this.groupBox4);
             this.tabPage2.Controls.Add(this.groupBox6);
             this.tabPage2.Controls.Add(this.btnThemN);
@@ -332,7 +333,7 @@
             // cmbNhaCungCap
             // 
             this.cmbNhaCungCap.FormattingEnabled = true;
-            this.cmbNhaCungCap.Location = new System.Drawing.Point(485, 78);
+            this.cmbNhaCungCap.Location = new System.Drawing.Point(510, 70);
             this.cmbNhaCungCap.Name = "cmbNhaCungCap";
             this.cmbNhaCungCap.Size = new System.Drawing.Size(154, 30);
             this.cmbNhaCungCap.TabIndex = 23;
@@ -340,7 +341,7 @@
             // cmbNhanVienN
             // 
             this.cmbNhanVienN.FormattingEnabled = true;
-            this.cmbNhanVienN.Location = new System.Drawing.Point(485, 27);
+            this.cmbNhanVienN.Location = new System.Drawing.Point(510, 19);
             this.cmbNhanVienN.Name = "cmbNhanVienN";
             this.cmbNhanVienN.Size = new System.Drawing.Size(154, 30);
             this.cmbNhanVienN.TabIndex = 22;
@@ -348,7 +349,7 @@
             // dTPNgayNhap
             // 
             this.dTPNgayNhap.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dTPNgayNhap.Location = new System.Drawing.Point(103, 77);
+            this.dTPNgayNhap.Location = new System.Drawing.Point(136, 75);
             this.dTPNgayNhap.Name = "dTPNgayNhap";
             this.dTPNgayNhap.Size = new System.Drawing.Size(130, 30);
             this.dTPNgayNhap.TabIndex = 20;
@@ -395,7 +396,7 @@
             // 
             // txtMaHDN
             // 
-            this.txtMaHDN.Location = new System.Drawing.Point(104, 30);
+            this.txtMaHDN.Location = new System.Drawing.Point(137, 28);
             this.txtMaHDN.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaHDN.Name = "txtMaHDN";
             this.txtMaHDN.ReadOnly = true;
@@ -431,6 +432,7 @@
             this.dtgvDSHDN.Margin = new System.Windows.Forms.Padding(5);
             this.dtgvDSHDN.Name = "dtgvDSHDN";
             this.dtgvDSHDN.ReadOnly = true;
+            this.dtgvDSHDN.RowHeadersWidth = 51;
             this.dtgvDSHDN.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgvDSHDN.Size = new System.Drawing.Size(844, 232);
             this.dtgvDSHDN.TabIndex = 0;
@@ -440,6 +442,7 @@
             // 
             this.SoHDN.DataPropertyName = "SoHDN";
             this.SoHDN.HeaderText = "Số HĐN";
+            this.SoHDN.MinimumWidth = 6;
             this.SoHDN.Name = "SoHDN";
             this.SoHDN.ReadOnly = true;
             this.SoHDN.Width = 150;
@@ -448,6 +451,7 @@
             // 
             this.MaNV.DataPropertyName = "MaNV";
             this.MaNV.HeaderText = "Mã NV";
+            this.MaNV.MinimumWidth = 6;
             this.MaNV.Name = "MaNV";
             this.MaNV.ReadOnly = true;
             this.MaNV.Width = 120;
@@ -456,6 +460,7 @@
             // 
             this.MaNCC.DataPropertyName = "MaNCC";
             this.MaNCC.HeaderText = "Mã NCC";
+            this.MaNCC.MinimumWidth = 6;
             this.MaNCC.Name = "MaNCC";
             this.MaNCC.ReadOnly = true;
             this.MaNCC.Width = 120;
@@ -464,6 +469,7 @@
             // 
             this.NgayNhap.DataPropertyName = "NgayNhap";
             this.NgayNhap.HeaderText = "Ngày Nhập";
+            this.NgayNhap.MinimumWidth = 6;
             this.NgayNhap.Name = "NgayNhap";
             this.NgayNhap.ReadOnly = true;
             this.NgayNhap.Width = 200;
@@ -473,51 +479,56 @@
             this.ThanhTienNhap.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.ThanhTienNhap.DataPropertyName = "ThanhTienNhap";
             this.ThanhTienNhap.HeaderText = "Thành Tiền";
+            this.ThanhTienNhap.MinimumWidth = 6;
             this.ThanhTienNhap.Name = "ThanhTienNhap";
             this.ThanhTienNhap.ReadOnly = true;
             // 
             // btnThemN
             // 
+            this.btnThemN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnThemN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThemN.Location = new System.Drawing.Point(109, 146);
             this.btnThemN.Name = "btnThemN";
             this.btnThemN.Size = new System.Drawing.Size(72, 48);
             this.btnThemN.TabIndex = 12;
             this.btnThemN.Text = "Tạo mới hóa đơn";
-            this.btnThemN.UseVisualStyleBackColor = true;
+            this.btnThemN.UseVisualStyleBackColor = false;
             this.btnThemN.Click += new System.EventHandler(this.btnThemN_Click);
             // 
             // btnSuaN
             // 
+            this.btnSuaN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnSuaN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSuaN.Location = new System.Drawing.Point(278, 146);
             this.btnSuaN.Name = "btnSuaN";
             this.btnSuaN.Size = new System.Drawing.Size(72, 48);
             this.btnSuaN.TabIndex = 16;
             this.btnSuaN.Text = "Sửa hóa đơn";
-            this.btnSuaN.UseVisualStyleBackColor = true;
+            this.btnSuaN.UseVisualStyleBackColor = false;
             this.btnSuaN.Click += new System.EventHandler(this.btnSuaN_Click);
             // 
             // btnXoaN
             // 
+            this.btnXoaN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnXoaN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoaN.Location = new System.Drawing.Point(621, 146);
             this.btnXoaN.Name = "btnXoaN";
             this.btnXoaN.Size = new System.Drawing.Size(72, 48);
             this.btnXoaN.TabIndex = 13;
             this.btnXoaN.Text = "Xóa hóa đơn";
-            this.btnXoaN.UseVisualStyleBackColor = true;
+            this.btnXoaN.UseVisualStyleBackColor = false;
             this.btnXoaN.Click += new System.EventHandler(this.btnXoaN_Click);
             // 
             // btnInHoaDonN
             // 
+            this.btnInHoaDonN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnInHoaDonN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInHoaDonN.Location = new System.Drawing.Point(448, 146);
             this.btnInHoaDonN.Name = "btnInHoaDonN";
             this.btnInHoaDonN.Size = new System.Drawing.Size(72, 48);
             this.btnInHoaDonN.TabIndex = 14;
             this.btnInHoaDonN.Text = "Chi tiết";
-            this.btnInHoaDonN.UseVisualStyleBackColor = true;
+            this.btnInHoaDonN.UseVisualStyleBackColor = false;
             this.btnInHoaDonN.Click += new System.EventHandler(this.btnInHoaDonN_Click);
             // 
             // errorProvider1
