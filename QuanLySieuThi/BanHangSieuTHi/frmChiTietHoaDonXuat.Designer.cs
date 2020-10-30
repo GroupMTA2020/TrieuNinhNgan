@@ -70,6 +70,7 @@
             this.dgvHangHoa.Location = new System.Drawing.Point(12, 92);
             this.dgvHangHoa.Name = "dgvHangHoa";
             this.dgvHangHoa.ReadOnly = true;
+            this.dgvHangHoa.RowHeadersWidth = 51;
             this.dgvHangHoa.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvHangHoa.Size = new System.Drawing.Size(548, 484);
             this.dgvHangHoa.TabIndex = 30;
@@ -79,49 +80,61 @@
             // 
             this.ID.DataPropertyName = "ID";
             this.ID.HeaderText = "ID";
+            this.ID.MinimumWidth = 6;
             this.ID.Name = "ID";
             this.ID.ReadOnly = true;
             this.ID.Visible = false;
+            this.ID.Width = 125;
             // 
             // SoHDX
             // 
             this.SoHDX.DataPropertyName = "SoHDX";
             this.SoHDX.HeaderText = "Mã HĐX";
+            this.SoHDX.MinimumWidth = 6;
             this.SoHDX.Name = "SoHDX";
             this.SoHDX.ReadOnly = true;
+            this.SoHDX.Width = 125;
             // 
             // MaLoai
             // 
             this.MaLoai.DataPropertyName = "MaLoai";
             this.MaLoai.HeaderText = "Mã Loại";
+            this.MaLoai.MinimumWidth = 6;
             this.MaLoai.Name = "MaLoai";
             this.MaLoai.ReadOnly = true;
+            this.MaLoai.Width = 125;
             // 
             // MaHang
             // 
             this.MaHang.DataPropertyName = "MaHang";
             this.MaHang.HeaderText = "Mã Hàng";
+            this.MaHang.MinimumWidth = 6;
             this.MaHang.Name = "MaHang";
             this.MaHang.ReadOnly = true;
+            this.MaHang.Width = 125;
             // 
             // SoLuong
             // 
             this.SoLuong.DataPropertyName = "SoLuong";
             this.SoLuong.HeaderText = "Số Lượng";
+            this.SoLuong.MinimumWidth = 6;
             this.SoLuong.Name = "SoLuong";
             this.SoLuong.ReadOnly = true;
+            this.SoLuong.Width = 125;
             // 
             // DonGia
             // 
             this.DonGia.DataPropertyName = "DonGia";
             this.DonGia.HeaderText = "Đơn Giá";
+            this.DonGia.MinimumWidth = 6;
             this.DonGia.Name = "DonGia";
             this.DonGia.ReadOnly = true;
+            this.DonGia.Width = 125;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(37, 72);
+            this.label1.Location = new System.Drawing.Point(11, 75);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 22);
@@ -147,7 +160,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(37, 135);
+            this.label2.Location = new System.Drawing.Point(11, 138);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 22);
@@ -165,7 +178,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(37, 196);
+            this.label3.Location = new System.Drawing.Point(11, 199);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 22);
@@ -183,7 +196,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(35, 249);
+            this.label4.Location = new System.Drawing.Point(9, 252);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 22);
@@ -201,7 +214,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(33, 312);
+            this.label5.Location = new System.Drawing.Point(7, 315);
             this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(87, 22);
@@ -219,7 +232,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(35, 376);
+            this.label6.Location = new System.Drawing.Point(9, 379);
             this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(90, 22);
@@ -249,7 +262,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Location = new System.Drawing.Point(772, 531);
             this.btnExit.Name = "btnExit";
@@ -261,7 +274,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.label7);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
