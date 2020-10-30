@@ -94,7 +94,10 @@ namespace BanHangSieuTHi
 
         public void loadDBComBoxNhanVien()
         {
-           
+            sqlQuery truyvanDL = new sqlQuery();
+            DataTable NV = truyvanDL.LayDuLieu("select MaNV from NHANVIEN");
+            cmbNhanVien.DataSource = NV;
+            cmbNhanVien.DisplayMember = "MaNV";
         }
 
         public void LoadDatagridView()
