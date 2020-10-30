@@ -113,7 +113,7 @@
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Font = new System.Drawing.Font("Segoe UI Emoji", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.835052F));
@@ -123,7 +123,7 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
@@ -143,7 +143,7 @@
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(4, 50);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -155,7 +155,7 @@
             this.tabTKHang.Controls.Add(this.tableLayoutPanel2);
             this.tabTKHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabTKHang.Location = new System.Drawing.Point(4, 29);
-            this.tabTKHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabTKHang.Margin = new System.Windows.Forms.Padding(4);
             this.tabTKHang.Name = "tabTKHang";
             this.tabTKHang.Size = new System.Drawing.Size(1023, 510);
             this.tabTKHang.TabIndex = 0;
@@ -242,8 +242,9 @@
             this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(4, 55);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(1015, 400);
             this.listView1.Sorting = System.Windows.Forms.SortOrder.Ascending;
@@ -297,7 +298,7 @@
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(4, 463);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -306,7 +307,7 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnThoat.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.Color.White;
@@ -320,7 +321,7 @@
             // 
             // btnIn
             // 
-            this.btnIn.BackColor = System.Drawing.Color.LawnGreen;
+            this.btnIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnIn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIn.ForeColor = System.Drawing.Color.White;
@@ -338,9 +339,9 @@
             this.tabNhapXuat.Controls.Add(this.tableLayoutPanel5);
             this.tabNhapXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabNhapXuat.Location = new System.Drawing.Point(4, 29);
-            this.tabNhapXuat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabNhapXuat.Margin = new System.Windows.Forms.Padding(4);
             this.tabNhapXuat.Name = "tabNhapXuat";
-            this.tabNhapXuat.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabNhapXuat.Padding = new System.Windows.Forms.Padding(4);
             this.tabNhapXuat.Size = new System.Drawing.Size(1023, 510);
             this.tabNhapXuat.TabIndex = 1;
             this.tabNhapXuat.Text = "Thống kê nhập bán";
@@ -357,7 +358,7 @@
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel12, 0, 3);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 4;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
@@ -411,7 +412,7 @@
             // 
             this.dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.dateTimePicker2.Location = new System.Drawing.Point(368, 7);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(135, 23);
             this.dateTimePicker2.TabIndex = 3;
@@ -446,7 +447,7 @@
             // 
             this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.dateTimePicker1.Location = new System.Drawing.Point(130, 7);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(133, 23);
             this.dateTimePicker1.TabIndex = 2;
@@ -487,7 +488,7 @@
             this.cbLoaiHang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbLoaiHang.FormattingEnabled = true;
             this.cbLoaiHang.Location = new System.Drawing.Point(130, 4);
-            this.cbLoaiHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbLoaiHang.Margin = new System.Windows.Forms.Padding(4);
             this.cbLoaiHang.Name = "cbLoaiHang";
             this.cbLoaiHang.Size = new System.Drawing.Size(373, 25);
             this.cbLoaiHang.TabIndex = 1;
@@ -528,7 +529,7 @@
             this.cbNhaCC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbNhaCC.FormattingEnabled = true;
             this.cbNhaCC.Location = new System.Drawing.Point(131, 4);
-            this.cbNhaCC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbNhaCC.Margin = new System.Windows.Forms.Padding(4);
             this.cbNhaCC.Name = "cbNhaCC";
             this.cbNhaCC.Size = new System.Drawing.Size(373, 25);
             this.cbNhaCC.TabIndex = 1;
@@ -541,7 +542,7 @@
             this.btnShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShow.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnShow.Location = new System.Drawing.Point(844, 41);
-            this.btnShow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnShow.Margin = new System.Windows.Forms.Padding(4);
             this.btnShow.Name = "btnShow";
             this.btnShow.Size = new System.Drawing.Size(167, 30);
             this.btnShow.TabIndex = 3;
@@ -558,7 +559,7 @@
             this.tableLayoutPanel10.Controls.Add(this.label7, 0, 0);
             this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel10.Location = new System.Drawing.Point(4, 79);
-            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 1;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -602,7 +603,7 @@
             this.tableLayoutPanel11.Controls.Add(this.listViewXuat, 1, 0);
             this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel11.Location = new System.Drawing.Point(4, 129);
-            this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 1;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -620,6 +621,7 @@
             this.columnHeader19});
             this.listViewNhap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listViewNhap.GridLines = true;
+            this.listViewNhap.HideSelection = false;
             this.listViewNhap.Location = new System.Drawing.Point(0, 0);
             this.listViewNhap.Margin = new System.Windows.Forms.Padding(0);
             this.listViewNhap.Name = "listViewNhap";
@@ -669,6 +671,7 @@
             this.columnHeader20});
             this.listViewXuat.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listViewXuat.GridLines = true;
+            this.listViewXuat.HideSelection = false;
             this.listViewXuat.Location = new System.Drawing.Point(503, 0);
             this.listViewXuat.Margin = new System.Windows.Forms.Padding(0);
             this.listViewXuat.Name = "listViewXuat";
@@ -737,7 +740,7 @@
             // 
             this.txtTienBan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtTienBan.Location = new System.Drawing.Point(890, 14);
-            this.txtTienBan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTienBan.Margin = new System.Windows.Forms.Padding(4);
             this.txtTienBan.Name = "txtTienBan";
             this.txtTienBan.Size = new System.Drawing.Size(116, 23);
             this.txtTienBan.TabIndex = 7;
@@ -746,7 +749,7 @@
             // 
             this.txtSLBan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtSLBan.Location = new System.Drawing.Point(761, 14);
-            this.txtSLBan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSLBan.Margin = new System.Windows.Forms.Padding(4);
             this.txtSLBan.Name = "txtSLBan";
             this.txtSLBan.Size = new System.Drawing.Size(116, 23);
             this.txtSLBan.TabIndex = 6;
@@ -755,7 +758,7 @@
             // 
             this.txtSoSPBan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtSoSPBan.Location = new System.Drawing.Point(635, 14);
-            this.txtSoSPBan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSoSPBan.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoSPBan.Name = "txtSoSPBan";
             this.txtSoSPBan.Size = new System.Drawing.Size(116, 23);
             this.txtSoSPBan.TabIndex = 5;
@@ -764,7 +767,7 @@
             // 
             this.txtTienNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtTienNhap.Location = new System.Drawing.Point(383, 14);
-            this.txtTienNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTienNhap.Margin = new System.Windows.Forms.Padding(4);
             this.txtTienNhap.Name = "txtTienNhap";
             this.txtTienNhap.Size = new System.Drawing.Size(116, 23);
             this.txtTienNhap.TabIndex = 4;
@@ -773,7 +776,7 @@
             // 
             this.txtSLNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtSLNhap.Location = new System.Drawing.Point(257, 14);
-            this.txtSLNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSLNhap.Margin = new System.Windows.Forms.Padding(4);
             this.txtSLNhap.Name = "txtSLNhap";
             this.txtSLNhap.Size = new System.Drawing.Size(116, 23);
             this.txtSLNhap.TabIndex = 3;
@@ -808,7 +811,7 @@
             // 
             this.txtSoSPNhap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtSoSPNhap.Location = new System.Drawing.Point(131, 14);
-            this.txtSoSPNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSoSPNhap.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoSPNhap.Name = "txtSoSPNhap";
             this.txtSoSPNhap.Size = new System.Drawing.Size(116, 23);
             this.txtSoSPNhap.TabIndex = 2;
@@ -821,7 +824,7 @@
             this.ClientSize = new System.Drawing.Size(1039, 597);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmThongKe";
             this.Text = "frmThongKe";
             this.Load += new System.EventHandler(this.frmThongKe_Load);
