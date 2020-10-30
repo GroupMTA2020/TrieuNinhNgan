@@ -15,20 +15,29 @@ namespace BanHangSieuTHi
 {
     public partial class frmBanHang : Form
     {
+        SqlCommand cmd;
+        sqlQuery truyVanDL = new sqlQuery();
         public frmBanHang()
         {
             InitializeComponent();
         }
 
-
+        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KBK3516B\SQLEXPRESS;Initial Catalog=QLBanHangSieuThi;Integrated Security=True");
         private void frmBanHang_Load(object sender, EventArgs e)
         {
-            
+            loadDBSdtKhachHang();
+            loadDBComBoxHangHoa();
+            loadDBComBoxNhanVien();
         }
 
         public void loadDBSdtKhachHang()
         {
-           
+            DataTable sdt = truyVanDL.LayDuLieu("select * from KHACHHANG ");
+
+            cmbSdtKH.DataSource = sdt;
+
+            cmbSdtKH.DisplayMember = "SdtKH".ToString().Trim();
+            cmbSdtKH.SelectedIndex = -1;
         }
 
         private void cmbSdtKH_SelectedIndexChanged(object sender, EventArgs e)
