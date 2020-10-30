@@ -88,6 +88,7 @@
             // 
             // tableLayoutPanel3
             // 
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.Silver;
             this.tableLayoutPanel3.ColumnCount = 4;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
@@ -110,7 +111,7 @@
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(4, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -134,6 +135,7 @@
             // btnThemSP
             // 
             this.btnThemSP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnThemSP.BackColor = System.Drawing.Color.White;
             this.btnThemSP.Location = new System.Drawing.Point(413, 18);
             this.btnThemSP.Margin = new System.Windows.Forms.Padding(4, 18, 4, 0);
             this.btnThemSP.Name = "btnThemSP";
@@ -141,7 +143,7 @@
             this.btnThemSP.Size = new System.Drawing.Size(63, 39);
             this.btnThemSP.TabIndex = 2;
             this.btnThemSP.Text = "button1";
-            this.btnThemSP.UseVisualStyleBackColor = true;
+            this.btnThemSP.UseVisualStyleBackColor = false;
             this.btnThemSP.Click += new System.EventHandler(this.btnThemSP_Click);
             // 
             // gvHang
@@ -236,6 +238,7 @@
             // 
             // tableLayoutPanel4
             // 
+            this.tableLayoutPanel4.BackColor = System.Drawing.Color.Silver;
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel5, 0, 0);
@@ -504,14 +507,16 @@
             // 
             // btnThuTien
             // 
+            this.btnThuTien.BackColor = System.Drawing.Color.White;
             this.btnThuTien.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnThuTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThuTien.Location = new System.Drawing.Point(4, 313);
             this.btnThuTien.Margin = new System.Windows.Forms.Padding(4);
             this.btnThuTien.Name = "btnThuTien";
             this.btnThuTien.Size = new System.Drawing.Size(296, 178);
             this.btnThuTien.TabIndex = 2;
             this.btnThuTien.Text = "Thu Tiền";
-            this.btnThuTien.UseVisualStyleBackColor = true;
+            this.btnThuTien.UseVisualStyleBackColor = false;
             this.btnThuTien.Click += new System.EventHandler(this.btnThuTien_Click);
             // 
             // frmBanHang2

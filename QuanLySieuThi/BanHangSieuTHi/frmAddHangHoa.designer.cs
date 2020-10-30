@@ -67,7 +67,7 @@
             // 
             this.Ma.Enabled = false;
             this.Ma.Location = new System.Drawing.Point(262, 125);
-            this.Ma.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Ma.Margin = new System.Windows.Forms.Padding(2);
             this.Ma.Multiline = true;
             this.Ma.Name = "Ma";
             this.Ma.Size = new System.Drawing.Size(247, 22);
@@ -76,7 +76,7 @@
             // Ten
             // 
             this.Ten.Location = new System.Drawing.Point(262, 172);
-            this.Ten.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Ten.Margin = new System.Windows.Forms.Padding(2);
             this.Ten.Multiline = true;
             this.Ten.Name = "Ten";
             this.Ten.Size = new System.Drawing.Size(247, 22);
@@ -96,7 +96,7 @@
             // DonVi
             // 
             this.DonVi.Location = new System.Drawing.Point(262, 219);
-            this.DonVi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DonVi.Margin = new System.Windows.Forms.Padding(2);
             this.DonVi.Multiline = true;
             this.DonVi.Name = "DonVi";
             this.DonVi.Size = new System.Drawing.Size(247, 22);
@@ -116,7 +116,7 @@
             // TenNhaSX
             // 
             this.TenNhaSX.Location = new System.Drawing.Point(262, 266);
-            this.TenNhaSX.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TenNhaSX.Margin = new System.Windows.Forms.Padding(2);
             this.TenNhaSX.Multiline = true;
             this.TenNhaSX.Name = "TenNhaSX";
             this.TenNhaSX.Size = new System.Drawing.Size(247, 22);
@@ -136,7 +136,7 @@
             // GiaDeNghi
             // 
             this.GiaDeNghi.Location = new System.Drawing.Point(262, 313);
-            this.GiaDeNghi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GiaDeNghi.Margin = new System.Windows.Forms.Padding(2);
             this.GiaDeNghi.Multiline = true;
             this.GiaDeNghi.Name = "GiaDeNghi";
             this.GiaDeNghi.Size = new System.Drawing.Size(247, 22);
@@ -167,7 +167,7 @@
             // SoLuong
             // 
             this.SoLuong.Location = new System.Drawing.Point(262, 409);
-            this.SoLuong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SoLuong.Margin = new System.Windows.Forms.Padding(2);
             this.SoLuong.Multiline = true;
             this.SoLuong.Name = "SoLuong";
             this.SoLuong.Size = new System.Drawing.Size(247, 22);
@@ -191,18 +191,18 @@
             this.Loai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Loai.FormattingEnabled = true;
             this.Loai.Location = new System.Drawing.Point(262, 360);
-            this.Loai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Loai.Margin = new System.Windows.Forms.Padding(2);
             this.Loai.Name = "Loai";
             this.Loai.Size = new System.Drawing.Size(247, 24);
             this.Loai.TabIndex = 14;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.button1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(259, 483);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 54);
             this.button1.TabIndex = 15;
@@ -212,7 +212,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.label8);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -227,7 +227,7 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(201, 13);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(219, 32);
+            this.label8.Size = new System.Drawing.Size(213, 32);
             this.label8.TabIndex = 0;
             this.label8.Text = "Thêm Hàng Hóa";
             // 
@@ -252,7 +252,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Ma);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmHangHoa";
             this.Text = "frmHangHoa";
             this.Load += new System.EventHandler(this.frmHangHoa_Load);
