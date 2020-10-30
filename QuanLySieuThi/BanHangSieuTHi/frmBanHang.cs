@@ -42,17 +42,53 @@ namespace BanHangSieuTHi
 
         private void cmbSdtKH_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            cmd = new SqlCommand("SELECT * FROM KHACHHANG WHERE SdtKH = '" + cmbSdtKH.Text.Trim() + "'", con);
+            con.Open();
+            cmd.ExecuteNonQuery();
+            SqlDataReader dr;
+            dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                string tenKH = (string)dr["TenKH"].ToString();
+                txtTenKH.Text = tenKH;
+
+                string maKH = (string)dr["MaKH"].ToString();
+                txtMaKH.Text = maKH;
+
+                string diachi = (string)dr["DiaChiKH"].ToString();
+                txtDiaChi.Text = diachi;
+            }
+            con.Close();
         }
 
         public void loadDBComBoxHangHoa()
-        {           
-            
+        {
+            DataTable SP = truyVanDL.LayDuLieu("select TenHang from HANGHOA");
+            cmbSanPham.DataSource = SP;
+            cmbSanPham.DisplayMember = "TenHang".ToString().Trim();
+            cmbSanPham.SelectedIndex = -1;
         }
 
         private void cmbSanPham_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+            txtSoLuong.Text = "1";
+            cmd = new SqlCommand("SELECT MaLoai,MaHang,GiaDeNghi FROM HANGHOA WHERE TenHang = N'" + cmbSanPham.Text.Trim() + "'", con);
+            con.Open();
+            cmd.ExecuteNonQuery();
+            SqlDataReader dr;
+            dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                string maLoai = (string)dr["MaLoai"].ToString();
+                txtMaLoai.Text = maLoai;
+
+                string maHang = (string)dr["MaHang"].ToString();
+                txtMaHang.Text = maHang;
+
+                string donGia = (string)dr["GiaDeNghi"].ToString();
+                txtDonGia.Text = donGia;
+            }
+            con.Close();
         }
 
 
