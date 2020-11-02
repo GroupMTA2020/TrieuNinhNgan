@@ -210,7 +210,28 @@ namespace BanHangSieuTHi
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-           
+            if (MessageBox.Show("Bạn muốn hủy đơn hàng?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                try
+                {
+                    if (con.State == ConnectionState.Closed)
+                        con.Open();
+
+                    cmd = new SqlCommand("DELETE FROM CHITIETXUAT WHERE SoHDX = '" + txtMaHD.Text + "'" + "DELETE FROM HOADONXUAT WHERE SoHDX = '" + txtMaHD.Text + "'", con);
+                    cmd.ExecuteNonQuery();
+
+                    if (con.State == ConnectionState.Open)
+                        con.Close();
+                    frmBanHang_Load(sender, e);
+                    LoadDatagridView();
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+
+            }
         }
     }
 }
