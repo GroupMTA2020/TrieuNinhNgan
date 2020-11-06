@@ -34,7 +34,7 @@ namespace BanHangSieuTHi
                 item.SubItems.Add(dt.Rows[i][0].ToString());
                 item.SubItems.Add(dt.Rows[i][1].ToString());
                 item.SubItems.Add(dt.Rows[i][2].ToString());
-                item.SubItems.Add(dt.Rows[i][3].ToString());
+                item.SubItems.Add(dt.Rows[i][3].ToString());                
                 listView1.Items.Add(item);
             }
         }
@@ -51,7 +51,7 @@ namespace BanHangSieuTHi
             txtTen.Text = this.listView1.Items[row].SubItems[2].Text;
             temp = this.listView1.Items[row].SubItems[1].Text;
             txtDiaChi.Text = this.listView1.Items[row].SubItems[3].Text;
-            txtSdt.Text = this.listView1.Items[row].SubItems[4].Text;
+            txtSdt.Text = this.listView1.Items[row].SubItems[4].Text;        
         }
 
 
@@ -85,7 +85,7 @@ namespace BanHangSieuTHi
                     result = MessageBox.Show("BẠN CÓ MUỐN THÊM KHÁCH HÀNG NÀY KHÔNG?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (result == DialogResult.Yes)
                     {
-                        string[] name = { "@MaKH", "@TenKH", "@DiaChiKH", "@SdtKH" };
+                        string[] name = { "@MaKH", "@TenKH", "@DiaChiKH", "@SdtKH"};
                         string[] value = { txtMa.Text, txtTen.Text, txtDiaChi.Text, txtSdt.Text };
                         sqlQuery sql = new sqlQuery();
                         sql.update("ADD_KH", name, value, 4);
@@ -122,7 +122,7 @@ namespace BanHangSieuTHi
                     result = MessageBox.Show("BẠN CÓ MUỐN SỬA THÔNG TIN KHÁCH HÀNG NÀY KHÔNG?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (result == DialogResult.Yes)
                     {
-                        string[] name = { "@MaBanDau", "@MaKH", "@TenKH", "@DiaChiKH", "@SdtKH" };
+                        string[] name = { "@MaBanDau", "@MaKH", "@TenKH", "@DiaChiKH", "@SdtKH"};
                         string[] value = { temp, txtMa.Text, txtTen.Text, txtDiaChi.Text, txtSdt.Text };
                         sqlQuery sql = new sqlQuery();
                         sql.update("UPDATE_KH", name, value, 5);
