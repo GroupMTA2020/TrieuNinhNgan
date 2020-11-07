@@ -33,8 +33,8 @@
             this.txtAcc = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.labelWarning = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.labelWarning = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -60,7 +60,7 @@
             // txtAcc
             // 
             this.txtAcc.Location = new System.Drawing.Point(278, 95);
-            this.txtAcc.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAcc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAcc.Name = "txtAcc";
             this.txtAcc.Size = new System.Drawing.Size(187, 22);
             this.txtAcc.TabIndex = 2;
@@ -68,7 +68,7 @@
             // txtPass
             // 
             this.txtPass.Location = new System.Drawing.Point(278, 136);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(187, 22);
             this.txtPass.TabIndex = 3;
@@ -82,9 +82,20 @@
             this.label3.Location = new System.Drawing.Point(214, 28);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(184, 32);
+            this.label3.Size = new System.Drawing.Size(188, 32);
             this.label3.TabIndex = 4;
             this.label3.Text = "ĐĂNG NHẬP";
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Location = new System.Drawing.Point(258, 208);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(100, 28);
+            this.btnLogin.TabIndex = 5;
+            this.btnLogin.Text = "Đăng Nhập";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // labelWarning
             // 
@@ -97,17 +108,6 @@
             this.labelWarning.TabIndex = 6;
             this.labelWarning.Text = "Sai tên đăng nhập hoặc mật khẩu";
             this.labelWarning.Visible = false;
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.Location = new System.Drawing.Point(258, 208);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(100, 28);
-            this.btnLogin.TabIndex = 5;
-            this.btnLogin.Text = "Đăng Nhập";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // Login
             // 
@@ -124,7 +124,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
@@ -140,7 +140,7 @@
         private System.Windows.Forms.TextBox txtAcc;
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label labelWarning;
         private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Label labelWarning;
     }
 }
