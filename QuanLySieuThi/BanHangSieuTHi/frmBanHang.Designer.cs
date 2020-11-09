@@ -166,7 +166,6 @@
             this.txtMaHD.Location = new System.Drawing.Point(398, 108);
             this.txtMaHD.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaHD.Name = "txtMaHD";
-            this.txtMaHD.ReadOnly = true;
             this.txtMaHD.Size = new System.Drawing.Size(84, 30);
             this.txtMaHD.TabIndex = 11;
             // 
@@ -352,6 +351,7 @@
             this.cmbSanPham.Name = "cmbSanPham";
             this.cmbSanPham.Size = new System.Drawing.Size(124, 30);
             this.cmbSanPham.TabIndex = 24;
+            this.cmbSanPham.SelectedIndexChanged += new System.EventHandler(this.cmbSanPham_SelectedIndexChanged);
             // 
             // cmbSdtKH
             // 
@@ -363,6 +363,7 @@
             this.cmbSdtKH.Name = "cmbSdtKH";
             this.cmbSdtKH.Size = new System.Drawing.Size(128, 30);
             this.cmbSdtKH.TabIndex = 25;
+            this.cmbSdtKH.SelectedIndexChanged += new System.EventHandler(this.cmbSdtKH_SelectedIndexChanged);
             // 
             // cmbNhanVien
             // 
@@ -384,6 +385,7 @@
             this.btnThemHH.TabIndex = 27;
             this.btnThemHH.Text = "Thêm";
             this.btnThemHH.UseVisualStyleBackColor = true;
+            this.btnThemHH.Click += new System.EventHandler(this.btnThemHH_Click);
             // 
             // groupBox1
             // 
@@ -418,6 +420,8 @@
             this.btnTaoHD.TabIndex = 27;
             this.btnTaoHD.Text = "Tạo Hóa Đơn";
             this.btnTaoHD.UseVisualStyleBackColor = true;
+            this.btnTaoHD.Click += new System.EventHandler(this.btnTaoHD_Click);
+
             // 
             // groupBox2
             // 
@@ -446,6 +450,7 @@
             this.btnCancel.TabIndex = 29;
             this.btnCancel.Text = "Hủy bỏ";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnThanhToan
             // 
@@ -456,6 +461,7 @@
             this.btnThanhToan.TabIndex = 28;
             this.btnThanhToan.Text = "Thanh Toán";
             this.btnThanhToan.UseVisualStyleBackColor = true;
+            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
             // dataSetBaoCao
             // 

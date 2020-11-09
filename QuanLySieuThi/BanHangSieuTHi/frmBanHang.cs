@@ -20,14 +20,23 @@ namespace BanHangSieuTHi
         public frmBanHang()
         {
             InitializeComponent();
+            cmbSdtKH.DataSource = truyVanDL.LayDuLieu("select*from KhachHang");
+            cmbNhanVien.DataSource= truyVanDL.LayDuLieu("select*from NhanVien");
+            cmbSdtKH.ValueMember = "SdtKH";
+            cmbSdtKH.DisplayMember = "SdtKH";
+            cmbNhanVien.ValueMember = "MaNV";
+            cmbNhanVien.DisplayMember = "MaNV";
         }
 
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KBK3516B\SQLEXPRESS;Initial Catalog=QLBanHangSieuThi;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=QLBanHangSieuThi;Integrated Security=True");
         private void frmBanHang_Load(object sender, EventArgs e)
         {
             loadDBSdtKhachHang();
             loadDBComBoxHangHoa();
             loadDBComBoxNhanVien();
+            cmbSdtKH.DataSource = truyVanDL.LayDuLieu("select*from KhachHang");
+            cmbSdtKH.ValueMember = "SdtKH";
+            cmbSdtKH.DisplayMember = "SdtKH";
         }
 
         public void loadDBSdtKhachHang()

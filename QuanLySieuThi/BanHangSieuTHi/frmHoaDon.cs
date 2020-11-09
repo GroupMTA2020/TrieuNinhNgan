@@ -21,7 +21,7 @@ namespace BanHangSieuTHi
         {
             InitializeComponent();                   
         }
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-KBK3516B\SQLEXPRESS;Initial Catalog=QLBanHangSieuThi;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=QLBanHangSieuThi;Integrated Security=True");
         private void frmHoaDon_Load(object sender, EventArgs e)
         {
             loadListView();
