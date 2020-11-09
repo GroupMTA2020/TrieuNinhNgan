@@ -57,7 +57,7 @@ namespace BanHangSieuTHi
 
                 //sqlQuery truyVan = new sqlQuery();
                 //truyVan.ExecuteNoneQuery("Insert into HOADONXUAT(SoHDX,NgayXuat,ThanhTienXuat,MaNV,MaKH) values('"+SoHDX.ToString()+"','"+DateTime.Now+"','"+TongTien.ToString()+"','"+MaNV+"','"+DBNull.Value+"')");
-                string connectionString = @"Data Source=MSI;Initial Catalog=QLBanHangSieuThi;Integrated Security=True";
+                string connectionString = @"Data Source=.\sqlexpress;Initial Catalog=QLBanHangSieuThi;Integrated Security=True";
                 SqlConnection con = new SqlConnection(connectionString);
                 con.Open();
                 string str = "insert into HOADONXUAT values(@SoHDX,@NgayXuat,@ThanhTienXuat,@MaNV,@MaKH)";
